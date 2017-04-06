@@ -39,7 +39,7 @@
 
     function heightDetect() {
         $(".main-head").css("height", $(window).height());
-    };
+    }
     heightDetect();
     $(window).resize(function() {
         heightDetect();
@@ -63,7 +63,7 @@
             $(".top-text").addClass("h-opacity");
             $(".top-menu").fadeIn(600);
             $(".top-menu li a").addClass("fadeInUp animated");
-        };
+        }
     });
 
     $("#form").validator().on("submit", function(event) {
@@ -87,7 +87,7 @@
 
         $.ajax({
             type: "POST",
-            url: "mail/mail.php",
+            url: "../mail.php",
             data: "name=" + name + "&email=" + email + "&message=" + message,
             success: function(text) {
                 if (text == "success") {
