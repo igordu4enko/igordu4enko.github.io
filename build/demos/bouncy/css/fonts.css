@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "BigJohn";
+	src: url("../fonts/BigJohn/BigJohn.eot");
+	src: url("../fonts/BigJohn/BigJohn.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/BigJohn/BigJohn.woff") format("woff"),
+	url("../fonts/BigJohn/BigJohn.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SansSerif";
+	src: url("../fonts/SansSerif/SansSerif.eot");
+	src: url("../fonts/SansSerif/SansSerif.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SansSerif/SansSerif.woff") format("woff"),
+	url("../fonts/SansSerif/SansSerif.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SourceSansProLight";
+	src: url("../fonts/SourceSansProLight/SourceSansProLight.eot");
+	src: url("../fonts/SourceSansProLight/SourceSansProLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SourceSansProLight/SourceSansProLight.woff") format("woff"),
+	url("../fonts/SourceSansProLight/SourceSansProLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SourceSansProBlack";
+	src: url("../fonts/SourceSansProBlack/SourceSansProBlack.eot");
+	src: url("../fonts/SourceSansProBlack/SourceSansProBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SourceSansProBlack/SourceSansProBlack.woff") format("woff"),
+	url("../fonts/SourceSansProBlack/SourceSansProBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+	url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

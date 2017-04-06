@@ -1,0 +1,153 @@
+body {
+  color: #222;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #00B2B7;
+}
+
+p, .main-footer {
+  color: #888;
+}
+
+.color_element {
+  color: #00B2B7;
+}
+
+.main_color {
+  color: #222;
+}
+
+.color_bg {
+  background-color: #00B2B7;
+}
+
+.color_border {
+  border-color: #00B2B7;
+}
+
+svg path {
+  fill: #f2f2f2;
+}
+
+.top-menu a {
+  letter-spacing: 4px;
+  &:hover {
+    color: #00B2B7;
+}
+}
+
+.top-text p {
+  color: #f2f2f2;
+  letter-spacing: 5px;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-light {
+  background-color: #f2f2f2;
+}
+
+.bg-dark {
+  background-color: #222;
+  color: #fff;
+  .section-descr::after {
+    background-color: #fff;
+}
+  a {
+    color: #fff;
+}
+}
+
+.section-descr {
+  letter-spacing: 5px;
+  &::after {
+    background-color: #222;
+}
+}
+
+section h3 {
+  letter-spacing: 3px;
+}
+
+.about {
+  p:nth-child(even) {
+    color: #00B2B7;
+}
+  li {
+    color: #888;
+}
+}
+
+.personal-header {
+  letter-spacing: 2px;
+}
+
+.resume-container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resume-icon {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.resume-item {
+  .resume-item-head {
+    background-color: #00B2B7;
+    color: #fff;
+    font-weight: 600;
+}
+  h3 {
+    letter-spacing: 1px;
+}
+}
+
+.portfolio {
+  li {
+    color: #888;
+    letter-spacing: 2px;
+    &.active {
+      color: #fff;
+      border-bottom: 1px solid #00B2B7;
+  }
+}
+  .portfolio-item .item-container a {
+    border-color: #00B2B7;
+    color: #00B2B7;
+}
+}
+
+.contacts {
+  .contact-icon, .text-danger {
+    color: #00B2B7;
+}
+  form {
+    input:focus, textarea:focus {
+      border: 1px solid #00B2B7;
+      letter-spacing: 2px;
+  }
+    input, textarea {
+      letter-spacing: 2px;
+  }
+    button {
+      background-color: #00B2B7;
+      color: #fff;
+      letter-spacing: 2px;
+  }
+}
+  .form-group {
+    letter-spacing: 2px;
+    color: #888;
+}
+}
+
+.main-footer ul a {
+  color: #00B2B7;
+}

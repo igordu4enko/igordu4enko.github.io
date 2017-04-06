@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="libs/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+</head>
+
+<body>
+    <header id="header" class="header prpl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo-wrap tac">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Tour Group">
+                            <h1 class="slogan">To go around the world</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 no-padd ttu">
+                    <div class="money-info">
+                        <div class="exchange">
+                            <span class="eur">Eur: <span class="pnk">29.46</span></span>
+                            <span class="usd">Usd: <span class="pnk">26.79</span></span>
+                        </div>
+                        <div class="currency">
+                            <div class="dropdown">
+                                <a class="droplink">Грн</a>
+                                <div class="dropdown-content">
+                                    <a href="#">EUR</a>
+                                    <a href="#">USD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <div class="dropdown">
+                            <a class="droplink">Львів</a>
+                            <div class="dropdown-content">
+                                <a href="#">Дрогобич</a>
+                                <a href="#">Рівне</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 no-padd">
+                    <div class="phones">
+                        <div class="contact-item"><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p>+38 (032) 290 31 21</p>
+                        </div>
+                        <div class="contact-item"><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p>+38 (032) 290 31 21</p>
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <div class="contact-item"><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p>visa@tour-group.com</p>
+                        </div>
+                        <div class="contact-item"><span><i class="fa fa-skype" aria-hidden="true"></i></span>
+                            <p>tgtourgroup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 auth no-padd tar">
+                    <a href="#">УВІЙТИ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Країни<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Норвегія</a>
+                            </li>
+                            <li><a href="#">Нігерія</a>
+                            </li>
+                            <li><a href="#">Нова Зеландія</a>
+                            </li>
+                            <li><a href="#">Непал</a>
+                            </li>
+                            <li><a href="#">Нідерланди</a>
+                            </li>
+                            <li><a href="#">Нікарагуа</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Акції<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a>
+                            </li>
+                            <li><a href="#">Another action</a>
+                            </li>
+                            <li><a href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Тури<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a>
+                            </li>
+                            <li><a href="#">Another action</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Готелі<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a>
+                            </li>
+                            <li><a href="#">Another action</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#news">Новини </a>
+                    </li>
+                    <li><a href="#">Відгуки</a>
+                    </li>
+                    <li><a href="#">Агентам</a>
+                    </li>
+                    <li><a href="#">Контакти</a>
+                    </li>
+                    <li class="search"><a href="#">Онлайн пошук</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="topper">
+        <div class="top-bg">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <img class="first-slide" src="img/top-bg-1.jpg" alt="First slide">
+                    </div>
+                    <div class="item active">
+                        <img class="second-slide" src="img/top-bg-2.jpg" alt="Second slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a class="ttu" href="#hotel" data-toggle="tab" aria-expanded="true">Готелі</a>
+                            </li>
+                            <li><a class="ttu" href="#tour" data-toggle="tab" aria-expanded="false">Тури</a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content prpl">
+                            <div class="tab-pane fade active in" id="hotel">
+                                <form class="hotel-form" action="">
+                                    <label>Країна</label>
+                                    <br>
+                                    <div id="the-basics">
+                                        <input type="text" name="country" class="typeahead" placeholder="Приклад: Норвегія" required>
+                                    </div>
+                                    <label>Місце/Назва готелю</label>
+                                    <br>
+                                    <input type="text" name="email" placeholder="Приклад: Албанія" required>
+                                    <div class="col-md-6 date-left no-padd">
+                                        <label>Дата заїзду</label>
+                                        <br>
+                                        <input type="text" name="email" placeholder="дд/мм/рр" id="datepicker-1" required>
+                                    </div>
+                                    <div class="col-md-6 date-right  no-padd">
+                                        <label>Дата виїзду</label>
+                                        <br>
+                                        <input type="text" name="email" placeholder="дд/мм/рр" id="datepicker-2" required>
+                                    </div>
+                                    <div class="col-md-4 no-padd nmbrs-1">
+                                        <label>Кімнат</label>
+                                        <br>
+                                        <input type="text" name="email" placeholder="--" required>
+                                    </div>
+                                    <div class="col-md-4 no-padd nmbrs-2">
+                                        <label>Дорослих</label>
+                                        <br>
+                                        <input type="text" name="email" placeholder="--" required>
+                                    </div>
+                                    <div class="col-md-4 no-padd nmbrs-3">
+                                        <label>Дітей</label>
+                                        <br>
+                                        <input type="text" name="email" placeholder="--" required>
+                                    </div>
+                                    <button class="ttu" type="submit">
+                                        Пошук
+                                    </button>
+                                    <a href="#">Додаткові опції</a>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="tour">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="offer-tab top-tab">
+                            <div class="tab-bg"></div>
+                            <div class="tab-descr prpl ttu">
+                                <a href="#"><h3>Готель Президентський</h3></a>
+                                <span class="tab-price">1200 грн</span>
+                                <p>Країна: Болгарія</p>
+                                <p>Курорт: Болгарія</p>
+                                <div class="social-block">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="offer-tab top-tab" style="background: url(img/tap-bg-2.png)">
+                            <div class="tab-descr tab-descr-1 ttu">
+                                <a href="#"><h3>Готель Президентський</h3></a>
+                                <span class="tab-price">1200 грн</span>
+                                <p>Країна: Болгарія</p>
+                                <p>Курорт: Болгарія</p>
+                                <div class="social-block">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discounts" class="discounts">
+        <h2 class="section-head grn">Акції</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="offer-tab">
+                        <div class="tab-bg dscnt-1"></div>
+                        <div class="tab-descr prpl ttu">
+                            <a href="#"><h3>Spa Resort</h3></a>
+                            <span class="tab-price">1555 грн</span>
+                            <p>Країна: Болгарія</p>
+                            <p>Курорт: Бургас</p>
+                            <div class="social-block">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="price-tag">
+                            <span>-10%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="offer-tab">
+                        <div class="tab-bg dscnt-2"></div>
+                        <div class="tab-descr prpl ttu">
+                            <a href="#"><h3>Villa Albania</h3></a>
+                            <span class="tab-price">890 грн</span>
+                            <p>Країна: Албанія</p>
+                            <p>Курорт: Саранда</p>
+                            <div class="social-block">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="price-tag">
+                            <span>-25%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="offer-tab">
+                        <div class="tab-bg dscnt-3"></div>
+                        <div class="tab-descr prpl ttu">
+                            <a href="#"><h3>Rixos 5 Stars</h3></a>
+                            <span class="tab-price">1400 грн</span>
+                            <p>Країна: Туреччина</p>
+                            <p>Курорт: Анталія</p>
+                            <div class="social-block">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="price-tag">
+                            <span>-35%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="news">
+        <div class="news-head">
+            <h2 class="section-head">Новини</h2>
+        </div>
+        <div class="container news-inner">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="nws">
+                        <img src="img/nws-1.png" alt="Tour Group">
+                        <h3 class="ttu">В Італії відкрився новий <br> 5-зірковий готель</h3>
+                        <p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад.</p>
+                        <div class="social-block">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </div>
+                        <div class="read-more ttu"><a href="#">Читати більше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="nws">
+                        <img src="img/nws-2.png" alt="Tour Group">
+                        <h3 class="ttu">Відпочинок у Швейцарських <br> альпах</h3>
+                        <p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад.</p>
+                        <div class="social-block">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </div>
+                        <div class="read-more ttu"><a href="#">Читати більше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#">Дивитися більше новин</a>
+        </p>
+    </section>
+    <section class="lower">
+        <div class="stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 lower-left-head">
+                        <h2 class="ttu">Топ продажів</h2>
+                    </div>
+                    <div class="col-md-8 lower-right-head">
+                        <h2 class="ttu">Контакти</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lwr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="top-sale">
+                            <img src="img/top-sale-1.png" alt="Tour Group">
+                            <div class="top-sale-cont">
+                                <h4><a href="#">Тур в Албанію. Саранда</a></h4>
+                                <p>7 днів по морському узбережжю. Проживання і харчування включенно.</p>
+                                <span class="price-changed">1600 грн</span><span class="sale-price">від 1200 грн</span>
+                            </div>
+                            <div class="price-tag">
+                                <span>-25%</span>
+                            </div>
+                        </div>
+                        <div class="top-sale">
+                            <img src="img/top-sale-2.png" alt="Tour Group">
+                            <div class="top-sale-cont">
+                                <h4><a href="#">Тур в Грецію. Острів Корфу</a></h4>
+                                <p>9 днів по морському узбережжю. Проживання і харчування включенно.</p>
+                                <span class="sale-price">від 1200 грн</span>
+                            </div>
+                        </div>
+                        <div class="top-sale">
+                            <img src="img/top-sale-3.png" alt="Tour Group">
+                            <div class="top-sale-cont">
+                                <h4><a href="#">Тур в Албанію. Ксаміл</a></h4>
+                                <p>10 днів по морському узбережжю. Проживання і харчування включенно.</p>
+                                <span class="sale-price">від 1200 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="offices">
+                            <div class="office prpl">
+                                <h3 class="ttu">Львів</h3>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (32) 290 31 21</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (32) 290 31 21</p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> visa@tour-group.com</p>
+                                <p><i class="fa fa-skype" aria-hidden="true"></i> saletg1</p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> вул. Героїв УПА 71, офіс 101</p>
+                            </div>
+                            <div class="office prpl">
+                                <h3 class="ttu">Рівне</h3>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (3262) 40 41 20</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (67) 673 78 35</p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> visa@tour-group.com</p>
+                                <p><i class="fa fa-skype" aria-hidden="true"></i> saletg2</p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> вул. 16 липня, 6а</p>
+                            </div>
+                            <div class="office prpl">
+                                <h3 class="ttu">Трускавець</h3>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (3247) 5 19 49</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +380 (67) 673 78 40</p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> visa@tour-group.com</p>
+                                <p><i class="fa fa-skype" aria-hidden="true"></i> saletg6</p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> вул. Стебницька, 84</p>
+                            </div>
+                        </div>
+                        <div class="subscribe">
+                            <h4 class="ttu prpl">Підписуйтеся на нас</h4>
+                            <div class="sbscrb">
+                                <span class="soc-icon"></span>
+                                <span class="soc-icon"></span>
+                                <span class="soc-icon"></span>
+                                <span class="soc-icon"></span>
+                                <form class="sbscrb-form ttu">
+                                    <input type="text" placeholder="ВАШ E-MAIL">
+                                    <button type="submit" class="ttu">Підписатися</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#header" class="arrow-up"></a>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <span class="copyright">&copy; 2015 — 2016 <a href="#">TOUR-GROUP</a></span>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Країни</a></li>
+                        <li><a href="#discounts">Акції</a></li>
+                        <li><a href="#">Тури</a></li>
+                        <li><a href="#">Готелі</a></li>
+                        <li><a href="#news">Новини</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Агентам</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/typeahead.jquery.min.js"></script>
+    <script src="libs/scroll2id/PageScroll2id.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker-1").datepicker();
+            $("#datepicker-2").datepicker();
+        });
+    </script>
+    <script>
+        var substringMatcher = function(strs) {
+            return function findMatches(q, cb) {
+                var matches, substringRegex;
+                // an array that will be populated with substring matches
+                matches = [];
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function(i, str) {
+                    if (substrRegex.test(str)) {
+                        matches.push(str);
+                    }
+                });
+                cb(matches);
+            };
+        };
+        var states = ['Норвегія', 'Нігерія', 'Нова Зеландія', 'Непал', 'Нідерланди', 'Нікарагуа'];
+        $('#the-basics .typeahead').typeahead({
+            hint: true,
+            highlight: true,
+            minLength: 1
+        }, {
+            name: 'states',
+            source: substringMatcher(states)
+        });
+    </script>
+    <script>
+         $(".navbar-nav a, .footer-menu ul a, .arrow-up").mPageScroll2id();
+    </script>
+</body>
+
+</html>
