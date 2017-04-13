@@ -56,5 +56,6 @@ Temporary Items
 .apdisk
 
 *.idea
+wp-content/themes/pomelo/node_modules
 node_modules
-..gulp-development
+_gulp-development

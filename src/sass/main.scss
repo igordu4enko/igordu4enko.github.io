@@ -276,6 +276,37 @@ section, header {
   }
 }
 
+#typed-cursor{
+  opacity: 1;
+  font-weight: 100;
+  animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-ms-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
 .h-opacity {
   opacity: 0.3;
   transition: all 0.25s ease;
@@ -553,4 +584,3 @@ section, header {
     font-size: 2em;
   }
 }
-//test

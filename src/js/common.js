@@ -4,7 +4,18 @@
         $(".loader_inner").delay(600).fadeOut();
         $(".loader").delay(600).fadeOut("slow");
     });
-    
+
+    $("#type-name").typeIt({
+        strings: ["Ігор Дученко", "Веб-розробник"],
+        speed: 150,
+        loop: true,
+        loopDelay: 1000,
+        autoStart: false,
+        lifeLike: true,
+        breakLines: false,
+        deleteDelay: 1000
+    });
+
     $(".top-menu ul a").mPageScroll2id();
 
     $("#portfolio-grid").mixItUp();
@@ -39,7 +50,7 @@
 
     function heightDetect() {
         $(".main-head").css("height", $(window).height());
-    }
+    };
     heightDetect();
     $(window).resize(function() {
         heightDetect();
@@ -63,7 +74,7 @@
             $(".top-text").addClass("h-opacity");
             $(".top-menu").fadeIn(600);
             $(".top-menu li a").addClass("fadeInUp animated");
-        }
+        };
     });
 
     $("#form").validator().on("submit", function(event) {

@@ -15,11 +15,10 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var uglifycss = require('gulp-uglifycss');
 
-
 var paths = {
     src: {
         html: 'src/**/*.html',
-        sass: 'src/sass/**/*.sсss',
+        sass: 'src/sass/*.sсss',
         vendorCss: 'src/css/**/*.css',
         img: 'src/img/**/*.{jpg,png,gif}',
         pic: 'src/pic/**/*',
@@ -37,6 +36,7 @@ var paths = {
                     'src/js/vendors/parallax.min.js',
                     'src/js/vendors/scroll2id.min.js',
                     'src/js/vendors/waypoints.min.js',
+                    'src/js/vendors/typeit.min.js',
                     'src/js/common.js'
                 ]
             }
@@ -53,6 +53,31 @@ var paths = {
     clean: './build'
 };
 
+gulp.task('build', [
+    'html',
+    'sass',
+    'img_min',
+    'pic_img_min',
+    'vendorStyles',
+    'scripts',
+    'fonts'
+]);
+
+// Browser sync
+gulp.task('browser-sync', function () {
+    //watch files
+    var files = [
+        './style.css',
+        './*.php',
+        './*.html'
+    ];
+    browserSync.init(files, {
+        server: {
+            baseDir: 'build'
+        },
+        notify: false
+    });
+});
 
 // Compile Our Sass
 gulp.task('sass', function () {
@@ -66,7 +91,7 @@ gulp.task('sass', function () {
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.build.css))
-        .pipe(reload({stream: true}));
+        .pipe(browserSync.stream());
 });
 
 // Compile Our js 
@@ -91,7 +116,8 @@ gulp.task('html', function () {
     gulp.src(paths.src.html)
         .pipe(include())
         .on('error', notify.onError('<%= error.message %>'))
-        .pipe(gulp.dest(paths.build.html));
+        .pipe(gulp.dest(paths.build.html))
+        .pipe(browserSync.stream());
 });
 
 // Compiling images from a folder src/img/
@@ -131,32 +157,6 @@ gulp.task('vendorStyles', function () {
         .pipe(gulp.dest(paths.build.css));
 });
 
-gulp.task('build', [
-    'html',
-    'sass',
-    'img_min',
-    'pic_img_min',
-    'vendorStyles',
-    'scripts',
-    'fonts'
-]);
-
-// Browser sync
-gulp.task('browser-sync', function () {
-    //watch files
-    var files = [
-        './style.css',
-        './*.php',
-        './*.html'
-    ];
-    browserSync.init(files, {
-        server: {
-            baseDir: 'build'
-        },
-        notify: false
-    });
-});
-
 gulp.task('watch', function () {
     watch([paths.src.sass], function () {
         gulp.start('sass');
@@ -179,4 +179,4 @@ gulp.task('watch', function () {
 });
 
 // Default Task 
-gulp.task('default', ['build', 'browser-sync', 'watch']); 
+gulp.task('default', ['build', 'watch', 'browser-sync']);
