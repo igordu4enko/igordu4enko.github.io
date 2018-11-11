@@ -44,7 +44,7 @@ var paths = {
         ]
     },
     build: {
-        html: 'build/',
+        html: './',
         css: 'build/css/',
         img: 'build/img/',
         pic: 'build/pic/',
@@ -70,11 +70,11 @@ gulp.task('browser-sync', function () {
     var files = [
         './style.css',
         './*.php',
-        './*.html'
+        './**/*.html'
     ];
     browserSync.init(files, {
         server: {
-            baseDir: 'build'
+            baseDir: './'
         },
         notify: false
     });
