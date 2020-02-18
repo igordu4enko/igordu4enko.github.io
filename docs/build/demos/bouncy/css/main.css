@@ -32,6 +32,11 @@ a:hover,
 a:visited {
     text-decoration: none;
 }
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .hidden {
     display: none;
 }
